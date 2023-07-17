@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    //border: 1px solid black;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-box{
+    width: 700px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+#text{
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+#text::before{
+    content: '" '
+}
+
+#text::after{
+    content: ' "'
+}
+
+#author{
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+
+#author::before{
+    content: "- ";
+}
+
+#link-and-new-quote-wrapper{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img{
+    height: 100%;
+}
+
+#new-quote{
+    margin: 5px;
+    background-color: rgb(71, 71, 159);
+    color: white;
+    border-radius: 10px;
+}
+
+#new-quote:hover{
+    background-color: gray;
+}
